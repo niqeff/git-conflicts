@@ -7,19 +7,21 @@ body {
   --font: system-ui;
   --max-width: 60ch;
   --body-padding: 2rem;
+
   --color-text: rgb(0, 0, 0, 0.9);
   --color-text-light: rgb(0, 0, 0, 0.6);
 }
 
 body {
-  font-family: var(--font);
-  color: var(--color-text);
+  width: min(var(--max-width), 100% - var(--body-padding));
   margin: 0 auto;
-  width: min(100% - var(--body-padding), var(--max-width));
+  color: var(--color-text);
+  font-family: var(--font);
 }
 
 footer {
   margin-top: 2rem;
+<<<<<<< HEAD
   font-size: 0.8rem;
 <<<<<<< HEAD
   color: rgb(0, 0, 0, 0.6);
@@ -27,4 +29,8 @@ footer {
 =======
   color: var(--color-text-light);
 >>>>>>> dd7e7df (create more custom properties)
+=======
+  color: var(--color-text-light);
+  font-size: 0.8rem;
+>>>>>>> d5723b5 (change property order)
 }
